@@ -1,3 +1,4 @@
+#Make sure your Raspberry Pi Pico runs CircutPython
 import usb_hid
 from adafruit_hid.mouse import Mouse
 import time
@@ -16,4 +17,5 @@ while True:
     time.sleep(5)
     kbd.press(Keycode.A)
     time.sleep(15)
+    kbd.release_all()
     
